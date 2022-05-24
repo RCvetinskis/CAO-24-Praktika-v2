@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAO 24 Praktika su JS Fetch GET ir POST</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Property List</h1>
+       <p >See all the houses you want!</p>
+      </div>
+    </header>
+    <main>
+        <p class="add-title">Add Proprety</p>
+        <form action="#">
+            <label for="image">Img</label>
+            <input type="url" name="image" placeholder="http://images.unsplash.com" id="image">
+            <label for="price">Price</label>
+            <input type="number" name="image" placeholder="50000" id="price">
+            <label for="description">Description</label>
+          <textarea name="description" id="description" cols="30" rows="10"
+          placeholder="anything you would like to say?"></textarea>
+          <label for="city">City</label>
+          <select name="city" id="city">
+              <option value="" disabled selected>Miestas</option>
+              <option value="Vilnius">Vilnius</option>
+              <option value="Kaunas">Kaunas</option>
+              <option value="Klaipeda">Klaipeda</option>
+          </select>
+          <button class="add-property">Add property+</button>
+        </form>
+   
+    <script src="app.js"></script>
+  </body>
+</html>

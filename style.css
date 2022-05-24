@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    
+    background-color: #02d4b1;
+    color: white;
+}
+
+header .container{
+    width: 90%;
+    margin: auto;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    font-weight: 500;
+}
+
+header p {
+    color: #75f1e2;
+}
+
+main{
+    width: 90%;
+    margin:20px auto;
+}
+
+main .filter-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px 0;
+}
+
+main button{
+    background-color: transparent;
+    padding: 10px;
+    font-weight: 500;
+    border: 2px solid lightgrey;
+    border-radius: 4px;
+}
+
+main button:hover{
+    cursor: pointer;
+    border-color: #02d4b1;
+    color: #02d4b1;
+}
+
+.active{
+    border-color: #02d4b1;
+    color: #02d4b1;
+ 
+}
+
+.add-property{
+    background-color: #02d4b1;
+    color: rgba(225,225,255, 0.586);
+    padding: 10px;
+    font-weight: 500;
+    border: 2px solid #02d4b1;
+    border-radius: 4px;
+    text-decoration: none;
+
+}
+
+.add-property:hover{
+    color: white;
+}
+
+.cards{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 20px;
+    
+}
+.card{
+    width: 260px;
+    box-shadow: 0 0 10px lightgrey;
+    margin-bottom: 30px;
+
+}
+
+.card img{
+    width: 100%;
+}
+
+.card .text{
+    padding: 15px;
+    opacity: 0.8;
+  
+}
+.card .city{
+    margin-top: 5px;
+}
+
+.card .description{
+    margin-top: 15px;
+}
+
+/* form */
+input, textarea, select{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border: 1px solid lightgrey;
+    outline: none;
+   
+}
+select{
+ width: auto;
+ margin-bottom: 20px;
+}
+.add-title{
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+
+@media(max-width: 768px){
+    .card{
+        width: 100%;
+    }
+}
+
