@@ -30,6 +30,7 @@ function loadCards(data){
         `
         cards.append(newCard)
     })
+    // Perduoda data sekancia then funkcija (filterdata)
     return data
 
    
